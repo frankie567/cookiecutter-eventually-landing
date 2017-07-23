@@ -26,7 +26,7 @@ The generator will ask you for the following information:
 * **value_proposition**: Subtitle of the page. Make it punchy 👍
 * **mailjet_apikey_public**: Your Mailjet public API key.
 * **mailjet_apikey_private**: Your Mailjet private API key.
-* *mailjet_contactslist_id*: Mailjet contacts list's id in which the emails will be added.
+* **mailjet_contactslist_id**: Mailjet contacts list's id in which the emails will be added.
 * **facebook** (*optional*): Facebook link shown at the bottom of the page.
 * **twitter** (*optional*): Twitter link shown at the bottom of the page.
 * **linkedin** (*optional*): LinkedIn link shown at the bottom of the page.
