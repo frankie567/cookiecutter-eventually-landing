@@ -11,6 +11,4 @@ ADD . /code/
 ENV PORT=8888
 EXPOSE $PORT
 
-ENV FLASK_APP=/code/{{cookiecutter.project_slug}}/app.py
-
-CMD flask run -h 0.0.0.0 -p $PORT
+CMD gunicorn -b 0.0.0.0:$PORT {{cookiecutter.project_slug}}.app:app
