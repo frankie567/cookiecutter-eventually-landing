@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{cookiecutter.title}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% raw %}
+		<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/html5shiv.js') }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie9.css') }}" /><![endif]-->
+		{% endraw %}
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1>{{cookiecutter.title}}</h1>
+				<p>{{cookiecutter.value_proposition}}</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="#">
+				<input type="email" name="email" id="email" placeholder="Email Address" required />
+				<input type="submit" value="Sign Up" />
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					{% if cookiecutter.facebook %}
+						<li><a href="{{cookiecutter.facebook}}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					{% endif %}
+					{% if cookiecutter.twitter %}
+						<li><a href="{{cookiecutter.twitter}}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					{% endif %}
+					{% if cookiecutter.linkedin %}
+						<li><a href="{{cookiecutter.linkedin}}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					{% endif %}
+					{% if cookiecutter.github %}
+						<li><a href="{{cookiecutter.github}}" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					{% endif %}
+					{% if cookiecutter.email %}
+						<li><a href="mailto:{{cookiecutter.email}}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					{% endif %}
+				</ul>
+				<ul class="copyright">
+					<li>&copy; {{cookiecutter.title}}.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			{% raw %}
+			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+			{% endraw %}
+
+	</body>
+</html>

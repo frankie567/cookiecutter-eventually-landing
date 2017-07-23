@@ -1,0 +1,13 @@
+{
+    "title": "Eventually",
+    "project_slug": "{{ cookiecutter.title.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "value_proposition": "A simple template for telling the world when you'll launch your next big thing. Brought to you by HTML5 UP.",
+    "mailjet_apikey_public": null,
+    "mailjet_apikey_private": null,
+    "mailjet_contactslist_id": null,
+    "facebook": "",
+    "twitter": "",
+    "linkedin": "",
+    "github": "",
+    "email": ""
+}
