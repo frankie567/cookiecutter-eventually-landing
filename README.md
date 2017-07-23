@@ -4,6 +4,8 @@ Cookiecutter template building a coming soon page with [Eventually template by H
 
 The form will add emails to a [Mailjet](https://www.mailjet.com/) contacts list.
 
+## [Demo](https://eventually-landing.herokuapp.com/)
+
 ## Getting started
 
 Install the latest Cookiecutter if you haven't installed it yet:
@@ -44,3 +46,7 @@ And there you go:
 ```
 export FLASK_APP=app.py && flask run
 ```
+
+## Deployment
+
+The project comes both with a **Heroku Procfile** and a **Dockerfile**.
