@@ -1,4 +1,4 @@
-from python:latest
+from python:alpine
 
 RUN mkdir /code
 WORKDIR /code
