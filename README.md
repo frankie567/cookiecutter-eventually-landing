@@ -1,5 +1,7 @@
 # Cookiecutter Eventually landing
 
+[![Build Status](https://travis-ci.org/frankie567/cookiecutter-eventually-landing.svg?branch=master)](https://travis-ci.org/frankie567/cookiecutter-eventually-landing)
+
 Cookiecutter template building a coming soon page with [Eventually template by HTML5 UP!](https://html5up.net/eventually).
 
 The form will add emails to a [Mailjet](https://www.mailjet.com/) contacts list.
