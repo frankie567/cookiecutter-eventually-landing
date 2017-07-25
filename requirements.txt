@@ -1,0 +1,5 @@
+cookiecutter
+email_validator
+Flask
+mailjet_rest
+pytest
