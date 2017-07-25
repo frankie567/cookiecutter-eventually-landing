@@ -42,7 +42,7 @@ class AppTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['detail'], 'Thank you!')
 
-        mocked_post.assert_called_once()
+        self.assertEqual(mocked_post.call_count, 1)
         mocked_post_args, mocked_post_kwargs = mocked_post.call_args
         self.assertIn('{{cookiecutter.mailjet_contactslist_id}}', mocked_post_args[0])
         self.assertEqual(json.loads(mocked_post_kwargs['data']), {'Email': email, 'Action': 'addnoforce'})
